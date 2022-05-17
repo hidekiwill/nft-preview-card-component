@@ -6,7 +6,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/hidekiwill/nft-preview-card-component
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://hidekiwill.github.io/nft-preview-card-component/
 
 ## My process
 
