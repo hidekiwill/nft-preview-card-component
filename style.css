@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-dark-blue1: hsl(217, 54%, 11%);
+  --neutral-dark-blue2: hsl(216, 50%, 16%);
+  --neutral-dark-blue3: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/*=========GENERAL=========*/
+body {
+  font-size: 1.6rem;
+  font-family: 'Outfit', sans-serif;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  background: var(--neutral-dark-blue1);
+}
+
+/*=========CARD=========*/
+.card {
+  width: 32.7rem;
+  height: 54.5rem;
+
+  border-radius: 1.5rem;
+
+  padding: 1.8rem;
+
+  background: var(--neutral-dark-blue3);
+}
+
+/*=========CARD IMAGE=========*/
+.image {
+  width: 100%;
+  height: 27.5rem;
+
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 1.5rem;
+}
+
+/*=========CARD IMAGE-HOVER=========*/
+
+.eye {
+  position: absolute;
+  right: 11.8rem;
+  top: 11.8rem;
+
+  opacity: 0;
+}
+
+.hover-effect {
+  position: absolute;
+  background: var(--primary-cyan);
+  width: 100%;
+  height: 27.5rem;
+  border-radius: 1.5rem;
+  top: 0;
+  opacity: 0;
+}
+
+.image:hover .eye {
+  opacity: 1;
+  transition: 400ms;
+}
+
+.hover-effect:hover {
+  opacity: 0.5;
+  transition: 400ms;
+}
+
+/*=========CARD DETAILS=========*/
+.details {
+  padding: 2.5rem 0;
+}
+
+.details h1 {
+  color: var(--white);
+
+  margin-bottom: 2rem;
+
+  font-weight: 400;
+  font-size: 2.2rem;
+  transition: color 400ms;
+}
+
+.details h1:hover {
+  color: var(--primary-cyan);
+}
+
+.details a {
+  text-decoration: none;
+}
+
+.details p {
+  color: var(--primary-blue);
+}
+
+/*=========CARD DETAIL-VALUE/TIME=========*/
+.value-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.details-value {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.details-value span {
+  color: var(--primary-cyan);
+}
+
+/*=========CARD DETAIL-TIME=========*/
+.details-time {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.details-time span {
+  color: var(--primary-blue);
+}
+
+.line-division {
+  border-bottom: 0.008rem solid var(--primary-blue);
+}
+
+/*=========AUTHOR=========*/
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.author a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.author p {
+  color: var(--primary-blue);
+}
+
+.author img {
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 100%;
+  border: 1.8px solid var(--white);
+}
+
+/*=========FOOTER=========*/
+
+.attribution {
+  color: var(--primary-blue);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+}
